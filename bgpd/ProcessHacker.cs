@@ -45,6 +45,8 @@ namespace bgpd
                         continue;
 
                     newEntity.tag = index;
+                    newEntity.LoadCREResource();
+                    newEntity.LoadTimedEffects();
                     newEntity.LoadDerivedStats();
                     entityListTemp.Add(newEntity);
                 }
